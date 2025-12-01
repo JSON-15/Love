@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pour Bigliyah ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ff7ea8, #ff4f93, #ff2e7d);
+        background-size: 600% 600%;
+        animation: bgMove 18s infinite alternate ease-in-out;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    @keyframes bgMove {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
+    h1 {
+        margin-top: 120px;
+        font-size: 4.5rem;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 3s forwards, glowPulse 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes glowPulse {
+        0% { text-shadow: 0 0 15px #ffffff55; }
+        100% { text-shadow: 0 0 30px #ffffffcc; }
+    }
+
+    /* Animation écriture lettre par lettre */
+    .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #fff;
+        width: 0;
+        margin: auto;
+        font-size: 2rem;
+        animation: typing 4s steps(30) forwards 2s, blink .7s infinite;
+        text-align: center;
+    }
+
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    /* Phrases qui apparaissent une par une */
+    .phrases {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 800px;
+        line-height: 2.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .phrase {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: showUp 1.5s forwards ease-out;
+    }
+
+    .phrase:nth-child(1) { animation-delay: 6s; }
+    .phrase:nth-child(2) { animation-delay: 8s; }
+    .phrase:nth-child(3) { animation-delay: 10s; }
+    .phrase:nth-child(4) { animation-delay: 12s; }
+    .phrase:nth-child(5) { animation-delay: 14s; }
+    .phrase:nth-child(6) { animation-delay: 16s; }
+
+    @keyframes showUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Jefferson signature */
+    .signature {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 1.8rem;
+        opacity: 0;
+        animation: fadeIn 3s 18s forwards, glowPulse 3s infinite alternate;
+    }
+
+    /* Floating hearts */
+    .hearts span {
+        position: absolute;
+        font-size: 2.3rem;
+        animation: float 7s linear infinite;
+        opacity: 0.7;
+    }
+
+    @keyframes float {
+        from { transform: translateY(50px); opacity: 0; }
+        to { transform: translateY(-700px); opacity: 1; }
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- Hearts animation -->
+<div class="hearts">
+    <span style="left: 10%; animation-delay: 1s;">❤️</span>
+    <span style="left: 25%; animation-delay: 2s;">💖</span>
+    <span style="left: 40%; animation-delay: 0s;">💕</span>
+    <span style="left: 60%; animation-delay: 2.5s;">💗</span>
+    <span style="left: 75%; animation-delay: 1s;">💞</span>
+    <span style="left: 90%; animation-delay: 3s;">❤️</span>
+</div>
+
+<!-- Bigliyah in big text -->
+<h1>BIGLIYAH ❤️</h1>
+
+<!-- Typewriter text -->
+<div class="typewriter">Tu es bien plus qu'une pensée… tu es une émotion.</div>
+
+<!-- Sublime phrases -->
+<div class="phrases">
+    <p class="phrase">« Ton prénom traverse mon esprit comme une lumière qui ne s’éteint jamais. »</p>
+    <p class="phrase">« Si mon cœur était un code, tu serais la fonction qui lui donne vie. »</p>
+    <p class="phrase">« Certaines personnes marquent une vie… toi, tu marques mon avenir. »</p>
+    <p class="phrase">« Tu n’es pas un chapitre… tu es l’histoire entière. »</p>
+    <p class="phrase">« Il y a des sourires… puis il y a le tien, celui qui reste même les yeux fermés. »</p>
+    <p class="phrase">« Jefferson ne tombe pas amoureux souvent… mais avec toi, c’était instantané. »</p>
+</div>
+
+<!-- Signature -->
+<div class="signature">— Jefferson</div>
+
+</body>
+</html>
